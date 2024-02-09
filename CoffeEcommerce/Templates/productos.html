@@ -1,0 +1,125 @@
+{% load static %}
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Coffe Shop</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+</head>
+<body>
+
+<header class="header">
+    <a href="#" class="logo">
+        <img src="{% static 'assets/img/logo.svg' %}" alt="Coffe Shop Logo">
+    </a>
+
+    <nav class="navbar">
+        <a href="{% url 'inicio' %}">inicio</a>
+        <a href="#">nosotros</a>
+        <a href="#">menu</a>
+        <a href="#">productos</a>
+        <a href="#">contactanos</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="buscar aqui...">
+        <label for="search-btn" class="fas fa-search"></label>
+    </div>
+
+    <div class="cart-items-container">
+        <!-- Contenido del carrito de compras -->
+    </div>
+</header>
+
+
+
+
+
+
+
+<section class="menu-section" id="menu">
+    <h1 class="menu-heading">Nuestro <span>Menú</span></h1>
+
+    <div class="menu-item-wrapper">
+        <div class="menu-item">
+            <img src="{% static 'assets/img/cafe1.png' %}" alt="Tassy and Healthy">
+            <h3>Tassy and Healthy</h3>
+            <div class="menu-price">$3.000 <span>$3.500</span></div>
+            <a href="#" class="menu-btn">Comprar Ahora</a>
+        </div>
+
+        <div class="menu-item">
+            <img src="{% static 'assets/img/cafe2.png' %}" alt="Latte">
+            <h3>Latte</h3>
+            <div class="menu-price">$4.000 <span>$4.500</span></div>
+            <a href="#" class="menu-btn">Comprar Ahora</a>
+        </div>
+
+        <div class="menu-item">
+            <img src="{% static 'assets/img/cafe3.png' %}" alt="Cappuccino">
+            <h3>Cappuccino</h3>
+            <div class="menu-price
+            ">$5.000 <span>$5.500</span></div>
+            <a href="#" class="menu-btn">Comprar Ahora</a>
+
+        </div>
+
+        <div class="menu-item">
+            <img src="{% static 'assets/img/cafe4.png' %}" alt="Espresso">
+            <h3>Espresso</h3>
+            <div class="menu-price
+            ">$6.000 <span>$6.500</span></div>
+            <a href="#" class="menu-btn">Comprar Ahora</a>
+        </div>
+
+        <div class="menu-item">
+            <img src="{% static 'assets/img/cafe5.png' %}" alt="Mocha">
+            <h3>Mocha</h3>
+            <div class="menu-price
+            ">$7.000 <span>$7.500</span></div>
+            <a href="#" class="menu-btn">Comprar Ahora</a>
+        </div>
+        <div class="menu-item">
+            <img src="{% static 'assets/img/cafe6.png' %}" alt="Macchiato">
+            <h3>Macchiato</h3>
+            <div class="menu-price
+            ">$8.000 <span>$8.500</span></div>
+            <a href="#" class="menu-btn">Comprar Ahora</a>
+        </div>
+
+
+
+
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <!-- Contenido del pie de página -->
+</footer>
+
+<script src="{% static 'assets/js/script.js' %}"></script>
+</body>
+</html>
